@@ -1,2 +1,30 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import Hero from "../components/Hero.svelte";
+  import Nav from "../components/common/Nav.svelte";
+</script>
+
+<div class="container">
+  <Nav />
+  <section>
+    <Hero />
+  </section>
+</div>
+
+<style>
+  * {
+    font-family: Inter;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 4rem;
+    height: 92vh;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+</style>
