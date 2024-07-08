@@ -1,5 +1,5 @@
 <script>
-  import Avatar from "./Avatar.svelte";
+  import Avatar from "../Avatar.svelte";
 </script>
 
 <div class="container">
@@ -11,11 +11,11 @@
     <div>
       <Avatar image="/images/WhatsApp Image (Akech1).jpg" />
       <Avatar />
-      <Avatar image="" />
+      <Avatar image="/images/WhatsApp Image (Nise1).jpg" />
     </div>
     <div>
-      <Avatar image="" />
-      <Avatar image="" />
+      <Avatar image="/images/GoogleChat Image (Elvine1).jpg" />
+      <Avatar image="/images/WhatsApp Image (Bruce1).jpg" />
     </div>
   </div>
   <div class="mission">

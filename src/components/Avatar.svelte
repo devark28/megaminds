@@ -3,7 +3,12 @@
 </script>
 
 <div class="card">
-  <img src={image} alt="#" class:hidden={image == undefined} />
+  <!-- <img src={image} alt="#" class:hidden={image == undefined} /> -->
+  <div
+    class="img"
+    style="background-image: url('{image}');"
+    class:hidden={image == undefined}
+  ></div>
   {#if image == undefined}
     <div class="logo">Mega minds</div>
   {/if}
@@ -15,18 +20,16 @@
     overflow: hidden;
   }
 
-  .card > img {
-    /* filter: grayscale(100%); */
-  }
-
   .card,
-  .card > img {
+  .card > .img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 11.2rem;
     height: 12.5rem;
-    background-color: #b2dfdb;
+    background-position: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 1.1rem;
   }
 
