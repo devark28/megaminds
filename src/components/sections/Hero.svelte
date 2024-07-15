@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
     flex: 1;
-    padding: 2rem 0;
+    padding: calc(2rem * 0.67) 0;
   }
 
   .members {
@@ -40,7 +40,7 @@
     flex: 1;
     justify-content: center;
     align-items: center;
-    gap: 1.7rem;
+    gap: calc(1.7rem * 0.67);
   }
 
   .members > * {
@@ -48,7 +48,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.7rem;
+    gap: calc(1.7rem * 0.67);
   }
 
   .mission {
@@ -62,13 +62,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: calc(3rem * 0.67);
     font-weight: 500;
     width: 68%;
-    height: 29.6rem;
-    border-radius: 1.1rem;
+    height: calc(24rem * 0.67);
+    border-radius: calc(1.1rem * 0.67);
     background-color: #b2dfdb;
     color: #00796b;
-    padding: 3rem;
+    padding: calc(3rem * 0.67);
   }
 </style>

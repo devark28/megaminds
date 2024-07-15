@@ -1,4 +1,5 @@
 <script>
+  import KeyPoint from "../KeyPoint.svelte";
 </script>
 
 <div class="container">
@@ -20,10 +21,7 @@
       practices of young women.
     </div>
   </div>
-  <div class="keypoints">
-    <span class="n">4</span>
-    <span class="t">Challenge</span>
-  </div>
+  <KeyPoint num="4" txt="Challenge" />
 </div>
 
 <style>
@@ -33,66 +31,24 @@
     justify-content: flex-start;
     align-items: center;
     flex: 1;
-    padding: 2rem 0;
+    padding: calc(2rem * 0.67) 0;
   }
 
   .takeaways {
     display: grid;
-    grid-template-columns: repeat(2, 34rem);
-    grid-template-rows: repeat(2, 14rem);
-    grid-column-gap: 2rem;
-    grid-row-gap: 1.5rem;
+    grid-template-columns: repeat(2, calc(34rem * 0.67));
+    grid-template-rows: repeat(2, calc(14rem * 0.67));
+    grid-column-gap: calc(2rem * 0.67);
+    grid-row-gap: calc(1.5rem * 0.67);
   }
 
   .card {
     background-color: #b2dfdb;
     color: #009688;
-    border-radius: 1rem;
-    padding: 2rem;
-    font-size: 2rem;
+    border-radius: calc(1rem * 0.67);
+    padding: calc(2rem * 0.67);
+    font-size: calc(2rem * 0.67);
     font-weight: 500;
     font-family: Inter;
-  }
-
-  .keypoints {
-    position: absolute;
-    right: 22.5%;
-    top: 18%;
-    height: 7rem;
-    width: 7rem;
-    background-color: #b2dfdb;
-    border-radius: 4rem;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #00796b;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-
-  .keypoints > .n {
-    min-height: 7rem;
-    min-width: 7rem;
-    background-color: #b2dfdb;
-    border-radius: 4rem;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #00796b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .keypoints > .t {
-    height: 7rem;
-    /* background-color: #b2dfdb; */
-    border-radius: 4rem;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #00796b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
   }
 </style>

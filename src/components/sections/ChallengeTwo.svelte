@@ -1,4 +1,5 @@
 <script>
+  import KeyPoint from "../KeyPoint.svelte";
 </script>
 
 <div class="container">
@@ -37,10 +38,7 @@
     empowerment. Their journey through different empowerment activities is a
     beam of hope and inspiration to other women in other communities.
   </div>
-  <div class="keypoints">
-    <span class="n">2</span>
-    <span class="t">Challenge</span>
-  </div>
+  <KeyPoint num="2" txt="Challenge" />
 </div>
 
 <style>
@@ -50,91 +48,21 @@
     justify-content: flex-start;
     align-items: center;
     flex: 1;
-    padding: 2rem 0;
+    padding: calc(2rem * 0.67) 0;
   }
 
   .text {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * 0.67);
     font-weight: 500;
     font-family: Inter;
-    padding: 2rem;
-    width: calc(53rem * 1.2);
-    height: calc(30rem * 1.2);
-    border-radius: 1rem;
-    line-height: 2.2rem;
-    letter-spacing: 0.03rem;
-  }
-
-  .video {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-    overflow: hidden;
-    width: calc(53rem * 1.2);
-    height: calc(30rem * 1.2);
-  }
-
-  .video::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #009688;
-    opacity: 30%;
-    pointer-events: none;
-  }
-
-  .video > iframe {
-    width: 100%;
-    height: 100%;
-  }
-
-  .keypoints {
-    position: absolute;
-    right: 22.5%;
-    top: 18%;
-    height: 7rem;
-    width: 7rem;
-    background-color: #b2dfdb;
-    border-radius: 4rem;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #00796b;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-
-  .keypoints > .n {
-    min-height: 7rem;
-    min-width: 7rem;
-    background-color: #b2dfdb;
-    border-radius: 4rem;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #00796b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .keypoints > .t {
-    height: 7rem;
-    /* background-color: #b2dfdb; */
-    border-radius: 4rem;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #00796b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
+    padding: calc(2rem * 0.67);
+    width: calc(calc(53rem * 0.67) * 1.2);
+    height: calc(calc(30rem * 0.67) * 1.2);
+    border-radius: calc(1rem * 0.67);
+    line-height: calc(2.2rem * 0.67);
+    letter-spacing: calc(0.03rem * 0.67);
   }
 </style>

@@ -79,7 +79,7 @@
   ul {
     position: relative;
     display: flex;
-    padding: 0 8%;
+    padding: 0 calc(8% + calc(8% * 0.67));
   }
 
   li {
@@ -89,7 +89,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 22rem;
+    width: calc(22rem * 0.67);
   }
 
   li > div {
@@ -97,9 +97,9 @@
     flex: 1;
     background-color: red;
     justify-content: center;
-    border-radius: 1.1rem;
+    border-radius: calc(1.1rem * 0.67);
     min-width: 100%;
-    min-height: 48rem;
+    min-height: calc(48rem * 0.67);
     background-position-x: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,6 +114,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0.4rem 0;
+    padding: calc(0.4rem * 0.67) 0;
   }
 </style>

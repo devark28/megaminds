@@ -25,12 +25,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 11.2rem;
-    height: 12.5rem;
+    width: calc(11.2rem * 0.67);
+    height: calc(12.5rem * 0.67);
     background-position: initial;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 1.1rem;
+    border-radius: calc(1.1rem * 0.67);
   }
 
   .card::before {
@@ -51,7 +51,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    font-size: 2.2rem;
+    font-size: calc(2.2rem * 0.67);
     font-weight: 500;
     font-family: Inter;
     color: #009688;

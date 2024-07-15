@@ -1,5 +1,6 @@
 <script>
   import PhoneView from "../PhoneView.svelte";
+  import KeyPoint from "../KeyPoint.svelte";
 
   const clips = [
     { src: "/images/WhatsApp Image (Natete).jpg", caption: "Natete" },
@@ -13,10 +14,7 @@
   <div class="content">
     <span>Calling attention to helpless and giving to the needful ...</span>
   </div>
-  <div class="keypoints">
-    <span class="n">3</span>
-    <span class="t">Challenge</span>
-  </div>
+  <KeyPoint num="3" txt="Challenge" />
 </div>
 
 <style>
@@ -26,13 +24,13 @@
     justify-content: center;
     align-items: center;
     flex: 1;
-    padding: 2rem;
+    padding: calc(2rem * 0.67);
   }
 
   .video {
     display: flex;
     justify-content: center;
-    width: 24rem;
+    width: calc(24rem * 0.67);
     height: 88%;
     align-items: start;
     flex: 1;
@@ -49,54 +47,12 @@
   .content > span {
     display: flex;
     align-items: center;
-    font-size: 54px;
-    line-height: 64px;
-    width: 440px;
-    /* height: 296px; */
-    padding: 37px 64px;
-    border-left: solid 8px #b2dfdb;
+    font-size: calc(54px * 0.67);
+    line-height: calc(64px * 0.67);
+    width: calc(440px * 0.67);
+    /* height: calc(296px * 0.67); */
+    padding: calc(37px * 0.67) calc(64px * 0.67);
+    border-left: solid calc(8px * 0.67) #b2dfdb;
     color: #009688;
-  }
-
-  .keypoints {
-    position: absolute;
-    right: 22.5%;
-    top: 18%;
-    height: 7rem;
-    width: 7rem;
-    background-color: #b2dfdb;
-    border-radius: 4rem;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #00796b;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-
-  .keypoints > .n {
-    min-height: 7rem;
-    min-width: 7rem;
-    background-color: #b2dfdb;
-    border-radius: 4rem;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #00796b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .keypoints > .t {
-    height: 7rem;
-    /* background-color: #b2dfdb; */
-    border-radius: 4rem;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #00796b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
   }
 </style>

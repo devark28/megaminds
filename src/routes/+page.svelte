@@ -35,14 +35,12 @@
     margin: 0;
     min-width: 0;
     box-sizing: border-box;
-    flex-direction: column;
-    flex-wrap: wrap;
   }
 
   .container {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem 4rem;
+    padding: calc(1.5rem * 0.67) calc(4rem * 0.67);
     height: 92vh;
   }
 
@@ -57,9 +55,9 @@
     position: absolute;
     z-index: -1;
     right: 27%;
-    top: 0;
+    top: 1%;
     height: 510%;
-    width: 6px;
+    width: calc(6px * 0.67);
     background: linear-gradient(to bottom, transparent 12%, #b2dfdb 0%);
   }
 </style>

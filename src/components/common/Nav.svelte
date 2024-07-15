@@ -23,7 +23,7 @@
   }
 
   .logo {
-    font-size: 2.2rem;
+    font-size: calc(2.2rem * 0.67);
     font-weight: 500;
     font-family: Inter;
     color: #009688;
