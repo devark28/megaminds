@@ -1,6 +1,7 @@
 <script>
   export let clips = [];
   export let animate = true;
+  export let nocaption = false;
 
   // Imports
   import { parseStyles, repeatFunction } from "../utils";
@@ -64,7 +65,9 @@
           background-image: url('{clip.src}');
           {get_window_styles(index)};"
         ></div>
-        <span>{clip.caption}</span>
+        {#if (nocaption == undefined || nocaption == false) && index == currentWindow}
+          <span>{clip.caption}</span>
+        {/if}
       </li>
     {/each}
   </ul>
@@ -90,12 +93,13 @@
     flex-direction: column;
     justify-content: flex-start;
     width: calc(22rem * 0.67);
+    gap: 0.5rem;
   }
 
   li > div {
     display: flex;
     flex: 1;
-    background-color: red;
+    /* background-color: red; */
     justify-content: center;
     border-radius: calc(1.1rem * 0.67);
     min-width: 100%;
@@ -115,5 +119,9 @@
     justify-content: center;
     width: 100%;
     padding: calc(0.4rem * 0.67) 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+    color: #00796b;
   }
 </style>

@@ -9,7 +9,7 @@
 
 <div class="container">
   <div class="video">
-    <PhoneView {clips} animate={false} />
+    <PhoneView {clips} animate={false} nocaption />
   </div>
   <div class="content">
     <span>Calling attention to helpless and giving to the needful ...</span>
