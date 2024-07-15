@@ -21,7 +21,7 @@
       practices of young women.
     </div>
   </div>
-  <KeyPoint num="4" txt="Challenge" />
+  <!-- <KeyPoint num="4" txt="Challenge" /> -->
 </div>
 
 <style>

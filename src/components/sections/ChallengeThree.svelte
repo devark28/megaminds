@@ -12,9 +12,9 @@
     <PhoneView {clips} animate={false} nocaption />
   </div>
   <div class="content">
-    <span>Calling attention to helpless and giving to the needful ...</span>
+    <span>Calling attention to the helpless and giving to the needful ...</span>
   </div>
-  <KeyPoint num="3" txt="Challenge" />
+  <!-- <KeyPoint num="3" txt="Challenge" /> -->
 </div>
 
 <style>
@@ -48,6 +48,7 @@
     display: flex;
     align-items: center;
     font-size: calc(54px * 0.67);
+    letter-spacing: 0.03rem;
     line-height: calc(64px * 0.67);
     width: calc(440px * 0.67);
     /* height: calc(296px * 0.67); */

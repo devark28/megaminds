@@ -16,7 +16,7 @@
     ></iframe>
   </div> -->
   <div class="text">
-    This is the story of the women of Mahama. Despite their hardships, women in
+    <span class="highlight">This is a story of the women of Mahama</span>. Despite their hardships, women in
     Mahama refugee camp are defying their odds. Though various empowerment
     program, they are able to create small businesses that can satisfy
     themselves and for their families. Amazing fact about Mahama Refugee Camp is
@@ -38,7 +38,7 @@
     empowerment. Their journey through different empowerment activities is a
     beam of hope and inspiration to other women in other communities.
   </div>
-  <KeyPoint num="2" txt="Challenge" />
+  <!-- <KeyPoint num="2" txt="Challenge" /> -->
 </div>
 
 <style>
@@ -52,7 +52,7 @@
   }
 
   .text {
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: center;
     font-size: calc(1.5rem * 0.67);
@@ -64,5 +64,12 @@
     border-radius: calc(1rem * 0.67);
     line-height: calc(2.2rem * 0.67);
     letter-spacing: calc(0.03rem * 0.67);
+  }
+
+  .highlight {
+    color: #00796b;
+    font: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
   }
 </style>

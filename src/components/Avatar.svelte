@@ -1,16 +1,17 @@
 <script>
   export let image;
+  export let index = 0;
 </script>
 
 <div class="card">
   <!-- <img src={image} alt="#" class:hidden={image == undefined} /> -->
   <div
     class="img"
-    style="background-image: url('{image}');"
+    style="background-image: url('{image}');animation-delay: {0.5 * (index + 1) / 4}s;"
     class:hidden={image == undefined}
   ></div>
   {#if image == undefined}
-    <div class="logo">Mega minds</div>
+    <div class="logo" style="animation-delay: {0.5 * (index + 1) / 4}s;">Mega minds</div>
   {/if}
 </div>
 
@@ -31,6 +32,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: calc(1.1rem * 0.67);
+  }
+
+  .card > .img,
+  .logo {
+    position: absolute;
+    animation: 0.6s ease-in-out forwards dropIn;
+    top: -100%;
   }
 
   .card::before {
@@ -60,5 +68,17 @@
 
   .hidden {
     display: none !important;
+  }
+
+  @keyframes dropIn {
+    0% {
+      top: -100%;
+    }
+    80% {
+      top: -100%;
+    }
+    100% {
+      top: 0;
+    }
   }
 </style>

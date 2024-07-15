@@ -6,6 +6,7 @@
   import ChallengeTwo from "../components/sections/ChallengeTwo.svelte";
   import ChallengeThree from "../components/sections/ChallengeThree.svelte";
   import ChallengeFour from "../components/sections/ChallengeFour.svelte";
+  import Key from "../components/Key.svelte";
 </script>
 
 <div class="container">
@@ -25,7 +26,12 @@
   <section>
     <ChallengeFour />
   </section>
-  <div class="keymap"></div>
+  <div class="keymap">
+    <Key num={1} txt="Challenge" offset={1} />
+    <Key num={2} txt="Challenge" offset={1.85} />
+    <Key num={3} txt="Challenge" offset={2.6} />
+    <Key num={4} txt="Challenge" offset={3.4} />
+  </div>
 </div>
 
 <style>
@@ -40,7 +46,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    padding: calc(1.5rem * 0.67) calc(4rem * 0.67);
+    padding: calc(1.5rem * 0.67) calc(6rem * 0.67);
     height: 92vh;
   }
 

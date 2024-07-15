@@ -2,6 +2,7 @@
   export let clips = [];
   export let animate = true;
   export let nocaption = false;
+  export let onSlide = (index) => {};
 
   // Imports
   import { parseStyles, repeatFunction } from "../utils";
@@ -45,13 +46,13 @@
 
   // timer interval
   if (animate == true) {
-    const intervalId = repeatFunction(3000, () => {
+    const intervalId = repeatFunction(4000, () => {
       if (currentWindow < clips.length - 1) {
         currentWindow += 1;
       } else {
         currentWindow = 0;
       }
-      // console.log("done", currentWindow);
+      onSlide(currentWindow);
     });
   }
 </script>

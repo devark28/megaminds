@@ -5,17 +5,17 @@
 <div class="container">
   <div class="members">
     <div>
-      <Avatar image="/images/WhatsApp Image (Natete).jpg" />
-      <Avatar image="/images/WhatsApp Image (Raissa).jpg" />
+      <Avatar image="/images/WhatsApp Image (Natete).jpg" index={5} />
+      <Avatar image="/images/WhatsApp Image (Raissa).jpg" index={4} />
     </div>
     <div>
-      <Avatar image="/images/WhatsApp Image (Akech1).jpg" />
-      <Avatar />
-      <Avatar image="/images/WhatsApp Image (Nise1).jpg" />
+      <Avatar image="/images/WhatsApp Image (Akech1).jpg" index={0} />
+      <Avatar index={6}/>
+      <Avatar image="/images/WhatsApp Image (Nise1).jpg" index={3} />
     </div>
     <div>
-      <Avatar image="/images/GoogleChat Image (Elvine1).jpg" />
-      <Avatar image="/images/WhatsApp Image (Bruce1).jpg" />
+      <Avatar image="/images/GoogleChat Image (Elvine1).jpg" index={1} />
+      <Avatar image="/images/WhatsApp Image (Bruce1).jpg" index={2} />
     </div>
   </div>
   <div class="mission">
