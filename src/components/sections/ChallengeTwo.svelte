@@ -16,27 +16,28 @@
     ></iframe>
   </div> -->
   <div class="text">
-    <span class="highlight">This is a story of the women of Mahama</span>. Despite their hardships, women in
-    Mahama refugee camp are defying their odds. Though various empowerment
-    program, they are able to create small businesses that can satisfy
-    themselves and for their families. Amazing fact about Mahama Refugee Camp is
-    their initiative including vocational training in tailoring, hairdressing
-    and small-scale farming. This program provides practical skills and foster a
-    sense of independence and confidence among the women. Many people think they
-    are waiting for the aids, but the reality is that people from Mahama camp,
-    are busy working hard to support themselves. Many of them have joined
-    cooperatives where they create and sell handcraft products, while others are
-    making their own things with the purpose of getting their basic needs for
-    their families. This has given them an income. This women's community
-    challenge remains, limited access to healthcare and the threat of gender
-    based violence. Umukobwa initiative provides psychological support, medical
-    care and workshops on women's rights and safety, where they can learn to
-    navigate and overcome their obstacles. Women in Mahama camp are not just
-    survivors, but leaders and innovators. They build a stronger community
-    through cooperative businesses and skill development workshops. In face of
-    affliction, women of Mahama refugee camp stand as a testament of power of
-    empowerment. Their journey through different empowerment activities is a
-    beam of hope and inspiration to other women in other communities.
+    <span class="highlight">This is a story of the women of Mahama</span>.
+    Despite their hardships, women in Mahama refugee camp are defying their
+    odds. Though various empowerment program, they are able to create small
+    businesses that can satisfy themselves and for their families. Amazing fact
+    about Mahama Refugee Camp is their initiative including vocational training
+    in tailoring, hairdressing and small-scale farming. This program provides
+    practical skills and foster a sense of independence and confidence among the
+    women. Many people think they are waiting for the aids, but the reality is
+    that people from Mahama camp, are busy working hard to support themselves.
+    Many of them have joined cooperatives where they create and sell handcraft
+    products, while others are making their own things with the purpose of
+    getting their basic needs for their families. This has given them an income.
+    This women's community challenge remains, limited access to healthcare and
+    the threat of gender based violence. Umukobwa initiative provides
+    psychological support, medical care and workshops on women's rights and
+    safety, where they can learn to navigate and overcome their obstacles. Women
+    in Mahama camp are not just survivors, but leaders and innovators. They
+    build a stronger community through cooperative businesses and skill
+    development workshops. In face of affliction, women of Mahama refugee camp
+    stand as a testament of power of empowerment. Their journey through
+    different empowerment activities is a beam of hope and inspiration to other
+    women in other communities.
   </div>
   <!-- <KeyPoint num="2" txt="Challenge" /> -->
 </div>
@@ -71,5 +72,24 @@
     font: inherit;
     line-height: inherit;
     letter-spacing: inherit;
+  }
+
+  @media (max-width: 400px) {
+    .container {
+      justify-content: flex-start;
+      align-items: start;
+      padding: calc(1rem * 0.67) 0;
+    }
+    .text {
+    font-size: calc(1.2rem * 0.67);
+    padding: calc(1rem * 0.67);
+    /* width: calc(calc(53rem * 0.67) * 1.2); */
+    width: 100%;
+    /* height: calc(calc(30rem * 0.67) * 1.2); */
+    height: fit-content;
+    border-radius: calc(1rem * 0.67);
+    line-height: calc(2.2rem * 0.67);
+    letter-spacing: calc(0.03rem * 0.67);
+  }
   }
 </style>

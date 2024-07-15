@@ -10,7 +10,7 @@
     </div>
     <div>
       <Avatar image="/images/WhatsApp Image (Akech1).jpg" index={0} />
-      <Avatar index={6}/>
+      <Avatar index={6} />
       <Avatar image="/images/WhatsApp Image (Nise1).jpg" index={3} />
     </div>
     <div>
@@ -70,5 +70,24 @@
     background-color: #b2dfdb;
     color: #00796b;
     padding: calc(3rem * 0.67);
+  }
+
+  @media (max-width: 400px) {
+    .container {
+      padding: calc(0rem * 0.67) 0;
+      flex-direction: column;
+    }
+    .members {
+      display: none;
+    }
+    .mission > * {
+      font-size: calc(2.6rem * 0.67);
+      width: 80%;
+      /* height: calc(24rem * 0.67); */
+      height: fit-content;
+      border-radius: calc(0.6rem * 0.67);
+      padding: calc(2rem * 0.67);
+      background-color: transparent;
+    }
   }
 </style>

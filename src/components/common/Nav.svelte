@@ -1,7 +1,7 @@
 <div class="container">
   <nav>
     <div class="logo">Mega minds</div>
-    <div class="menus"></div>
+    <!-- <div class="menus"></div> -->
     <div class="spacer"></div>
   </nav>
 </div>
@@ -43,5 +43,12 @@
     justify-content: center;
     flex: 3;
     height: 100%;
+  }
+
+  @media (max-width: 400px) {
+    .logo {
+      font-size: calc(2rem * 0.67);
+      font-weight: 500;
+    }
   }
 </style>

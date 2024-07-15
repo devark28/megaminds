@@ -1,12 +1,16 @@
 <script>
-  export let num = 0;
-  export let txt = 0;
+  export let num = "";
+  export let txt = "";
+  export let subtxt = "";
   export let offset = 0;
 </script>
 
 <div class="keypoints" style="top: {25 * offset}%;">
   <span class="n">{num}</span>
-  <span class="t">{txt}</span>
+  <span class="t">
+    {txt}
+    <span>{subtxt}</span>
+  </span>
 </div>
 
 <style>
@@ -47,7 +51,16 @@
     color: #00796b;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     padding: 0 calc(2rem * 0.67);
+    flex-direction: column;
+  }
+
+  .keypoints > .t > span {
+    text-wrap: nowrap;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #00796b;
+    padding: 0 calc(0rem * 0.67);
   }
 </style>

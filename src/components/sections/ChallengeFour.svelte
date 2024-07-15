@@ -51,4 +51,16 @@
     font-weight: 500;
     font-family: Inter;
   }
+
+@media (max-width: 400px) {
+  .takeaways {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    border-radius: calc(1rem * 0.67);
+    padding: calc(2rem * 0.67);
+    font-size: calc(2rem * 0.67);
+  }
+}
 </style>

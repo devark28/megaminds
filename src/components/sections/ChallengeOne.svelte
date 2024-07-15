@@ -8,32 +8,38 @@
     {
       src: "/images/WhatsApp Image (Natete).jpg",
       caption: "Natete",
-      description: "I like learning different new things and improving on those I already know.",
+      description:
+        "I like learning different new things and improving on those I already know.",
     },
     {
       src: "/images/WhatsApp Image (Raissa).jpg",
       caption: "Raissa",
-      description: "I fight for women empowerment as i believe there is still room for improvement.",
+      description:
+        "I fight for women empowerment as i believe there is still room for improvement.",
     },
     {
       src: "/images/WhatsApp Image (Akech1).jpg",
       caption: "Akech",
-      description: "Booyah booyah boooyah booooo! Booyah booyah boooyah booooo! Booyah!",
+      description:
+        "Booyah booyah boooyah booooo! Booyah booyah boooyah booooo! Booyah!",
     },
     {
       src: "/images/WhatsApp Image (Nise1).jpg",
       caption: "Nise",
-      description: "I believe in innovative ideas to transform the community towards a sustainable future.",
+      description:
+        "I believe in innovative ideas to transform the community towards a sustainable future.",
     },
     {
       src: "/images/GoogleChat Image (Elvine1).jpg",
       caption: "Elvine",
-      description: "I'm passionate about helping vulnerable people especially refugees and orphans.",
+      description:
+        "I'm passionate about helping vulnerable people especially refugees and orphans.",
     },
     {
       src: "/images/WhatsApp Image (Bruce1).jpg",
       caption: "Bruce",
-      description: "I aspire to building sustainable and maintainable computer systems.",
+      description:
+        "I aspire to building sustainable and maintainable computer systems.",
     },
   ];
 </script>
@@ -118,5 +124,11 @@
 
   .visible {
     animation: slideIn 0.6s ease-in-out forwards;
+  }
+
+  @media (max-width: 400px) {
+    .description > .wrapper {
+      display: none;
+    }
   }
 </style>

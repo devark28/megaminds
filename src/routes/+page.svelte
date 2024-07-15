@@ -15,22 +15,36 @@
     <Hero />
   </section>
   <section>
+    <span class="subtitle">Passions alone and together</span>
     <ChallengeOne />
   </section>
   <section>
+    <span class="subtitle">Great women of Mahama</span>
     <ChallengeTwo />
   </section>
   <section>
+    <span class="subtitle">Striving for impact</span>
     <ChallengeThree />
   </section>
   <section>
+    <span class="subtitle">Treasure hunt takeaways</span>
     <ChallengeFour />
   </section>
   <div class="keymap">
-    <Key num={1} txt="Challenge" offset={1} />
-    <Key num={2} txt="Challenge" offset={1.85} />
-    <Key num={3} txt="Challenge" offset={2.6} />
-    <Key num={4} txt="Challenge" offset={3.4} />
+    <Key
+      num={1}
+      txt="Challenge"
+      subtxt="Passions alone and together"
+      offset={1}
+    />
+    <Key num={2} txt="Challenge" subtxt="Great women of Mahama" offset={1.85} />
+    <Key num={3} txt="Challenge" subtxt="Striving for impact" offset={2.6} />
+    <Key
+      num={4}
+      txt="Challenge"
+      subtxt="Treasure hunt takeaways"
+      offset={3.4}
+    />
   </div>
 </div>
 
@@ -65,5 +79,35 @@
     height: 510%;
     width: calc(6px * 0.67);
     background: linear-gradient(to bottom, transparent 12%, #b2dfdb 0%);
+  }
+
+  .subtitle {
+    display: none;
+  }
+
+  @media (max-width: 400px) {
+    .container {
+      padding: calc(1rem * 0.67) calc(3rem * 0.67);
+      overflow-x: hidden;
+    }
+    .keymap {
+      display: none;
+    }
+    section:nth-child(2) {
+      min-height: 80vh;
+      /* min-height: 150vh; */
+    }
+    section:nth-child(3) {
+    }
+    section:nth-child(4) {
+      /* min-height: 80vh; */
+      min-height: 160vh;
+    }
+    .subtitle {
+      display: flex;
+      font-weight: 500;
+      font-size: 1.3rem;
+      text-wrap: nowrap;
+    }
   }
 </style>
