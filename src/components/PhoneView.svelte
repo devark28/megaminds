@@ -1,5 +1,6 @@
 <script>
   export let clips = [];
+  export let animate = true;
 
   // Imports
   import { parseStyles, repeatFunction } from "../utils";
@@ -27,12 +28,12 @@
 
   $: get_window_styles = (index) => {
     if (
-      (currentWindow == 0 && index == clips.length - 1) ||
+      (currentWindow == 0 && index == clips.length - 1 && animate == true) ||
       index == currentWindow - 1
     ) {
       return parseStyles(windowStyles.left);
     } else if (
-      (currentWindow == clips.length - 1 && index == 0) ||
+      (currentWindow == clips.length - 1 && index == 0 && animate == true) ||
       index == currentWindow + 1
     ) {
       return parseStyles(windowStyles.right);
@@ -42,14 +43,16 @@
   };
 
   // timer interval
-  const intervalId = repeatFunction(3000, () => {
-    if (currentWindow < clips.length - 1) {
-      currentWindow += 1;
-    } else {
-      currentWindow = 0;
-    }
-    console.log("done", currentWindow);
-  });
+  if (animate == true) {
+    const intervalId = repeatFunction(3000, () => {
+      if (currentWindow < clips.length - 1) {
+        currentWindow += 1;
+      } else {
+        currentWindow = 0;
+      }
+      // console.log("done", currentWindow);
+    });
+  }
 </script>
 
 <div class="container">

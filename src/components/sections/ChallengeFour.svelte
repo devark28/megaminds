@@ -1,20 +1,27 @@
 <script>
-  import PhoneView from "../PhoneView.svelte";
-
-  const clips = [
-    { src: "/images/WhatsApp Image (Natete).jpg", caption: "Natete" },
-  ];
 </script>
 
 <div class="container">
-  <div class="video">
-    <PhoneView {clips} animate={false} />
-  </div>
-  <div class="content">
-    <span>Calling attention to helpless and giving to the needful ...</span>
+  <div class="takeaways">
+    <div class="card">
+      Engage community leaders fo advocacy to break cultural taboos surrounding
+      sexual reproductive health.
+    </div>
+    <div class="card">
+      Partner with NGOs and seek grants to strengthen financial support for
+      awareness programs
+    </div>
+    <div class="card">
+      Set up safe environments where young women can openly discuss sexual
+      health matters and receive support.
+    </div>
+    <div class="card">
+      Create educational resources that resonate with the cultural beliefs and
+      practices of young women.
+    </div>
   </div>
   <div class="keypoints">
-    <span class="n">3</span>
+    <span class="n">4</span>
     <span class="t">Challenge</span>
   </div>
 </div>
@@ -23,39 +30,28 @@
   .container {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex: 1;
-    padding: 2rem;
+    padding: 2rem 0;
   }
 
-  .video {
-    display: flex;
-    justify-content: center;
-    width: 24rem;
-    height: 88%;
-    align-items: start;
-    flex: 1;
+  .takeaways {
+    display: grid;
+    grid-template-columns: repeat(2, 34rem);
+    grid-template-rows: repeat(2, 14rem);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1.5rem;
   }
 
-  .content {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex: 2;
-    height: 64%;
-  }
-
-  .content > span {
-    display: flex;
-    align-items: center;
-    font-size: 54px;
-    line-height: 64px;
-    width: 440px;
-    /* height: 296px; */
-    padding: 37px 64px;
-    border-left: solid 8px #b2dfdb;
+  .card {
+    background-color: #b2dfdb;
     color: #009688;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Inter;
   }
 
   .keypoints {

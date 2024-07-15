@@ -13,7 +13,7 @@
   }
 
   .container > nav {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     display: flex;
     justify-content: center;
