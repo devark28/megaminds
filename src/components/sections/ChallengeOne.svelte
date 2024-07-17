@@ -131,4 +131,10 @@
       display: none;
     }
   }
+
+  @media (min-height: 660px) {
+    .description > .wrapper {
+      bottom: 40%;
+    }
+  }
 </style>

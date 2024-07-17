@@ -110,4 +110,10 @@
       text-wrap: nowrap;
     }
   }
+
+  @media (min-width: 1360px) {
+    .container {
+      padding: calc(2rem * 0.67) calc(15% * 0.67);
+    }
+  }
 </style>
