@@ -21,7 +21,7 @@
       src: "/images/WhatsApp Image (Akech1).jpg",
       caption: "Akech",
       description:
-        "I am really passionate about impacting girl child education.",
+        "I am really passionate about impacting a young girl's education.",
     },
     {
       src: "/images/WhatsApp Image (Nise1).jpg",
