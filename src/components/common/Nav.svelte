@@ -37,13 +37,13 @@
     height: 100%;
   }
 
-  .menus {
+  /* .menus {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 3;
     height: 100%;
-  }
+  } */
 
   @media (max-width: 400px) {
     .logo {
