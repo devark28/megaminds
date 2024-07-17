@@ -21,7 +21,7 @@
       src: "/images/WhatsApp Image (Akech1).jpg",
       caption: "Akech",
       description:
-        "Booyah booyah boooyah booooo! Booyah booyah boooyah booooo! Booyah!",
+        "I am really passianate about impacting girl child education.",
     },
     {
       src: "/images/WhatsApp Image (Nise1).jpg",
