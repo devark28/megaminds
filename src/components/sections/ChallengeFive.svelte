@@ -5,25 +5,28 @@
 <div class="container">
   <div class="implementations">
     <div class="card">
-      Establishing a <span class="highlight">Learning hub</span> that teaches young girls activities such as
-      hairdressing, cosmetology, and tailoring.
+      Establishing a <span class="highlight">Learning hub</span> that teaches young
+      girls activities such as hairdressing, cosmetology, and tailoring.
     </div>
     <div class="card">
-        <span class="highlight">Takeaways and fliers</span> on sexual reproductive health after learning hub
-      sessions.
+      <span class="highlight">Takeaways and fliers</span> on sexual reproductive
+      health after learning hub sessions.
     </div>
     <div class="card">
-        <span class="highlight">Community outreach</span> to educate and sensitize parents that sexual education
-      is a necessity.
+      <span class="highlight">Community outreach</span> to educate and sensitize
+      parents that sexual education is a necessity.
     </div>
     <div class="card">
-        <span class="highlight">Organizing talent shows</span> themed around a sexual health education topics.
+      <span class="highlight">Organizing talent shows</span> themed around a sexual
+      health education topics.
     </div>
   </div>
   <div class="solution">
     <div>
-      To Address the problem, we designed an initiative to provide young girls and
-      women with reliable and easy to understand sexual health information.
+      To Address <span class="highlight"
+        >the problem of limited sexual health information in Mahama</span
+      >, we designed an initiative to provide young girls and women with
+      reliable and easy to understand sexual health information.
     </div>
   </div>
 </div>
@@ -73,17 +76,18 @@
   }
 
   .solution > * {
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: center;
     font-size: calc(3rem * 0.67);
     font-weight: 500;
     width: 68%;
-    height: calc(24rem * 0.67);
+    height: calc(27rem * 0.67);
     border-radius: calc(1.1rem * 0.67);
     background-color: #b2dfdb;
     color: #00796b;
     padding: calc(3rem * 0.67);
+    padding-bottom: calc(5rem * 0.67);
   }
 
   .highlight {
