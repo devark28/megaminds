@@ -6,6 +6,8 @@
   import ChallengeTwo from "../components/sections/ChallengeTwo.svelte";
   import ChallengeThree from "../components/sections/ChallengeThree.svelte";
   import ChallengeFour from "../components/sections/ChallengeFour.svelte";
+  import ChallengeFive from "../components/sections/ChallengeFive.svelte";
+  import ChallengeSix from "../components/sections/ChallengeSix.svelte";
   import Key from "../components/Key.svelte";
 </script>
 
@@ -30,21 +32,34 @@
     <span class="subtitle">Treasure hunt takeaways</span>
     <ChallengeFour />
   </section>
+  <section>
+    <span class="subtitle">How did we solve it?</span>
+    <ChallengeFive />
+  </section>
+  <section>
+    <ChallengeSix />
+  </section>
   <div class="keymap">
     <Key
       num={1}
       txt="Challenge"
       subtxt="Passions alone and together"
-      offset={1}
+      offset={0.85}
     />
-    <Key num={2} txt="Challenge" subtxt="Great women of Mahama" offset={1.85} />
-    <Key num={3} txt="Challenge" subtxt="Striving for impact" offset={2.6} />
+    <Key num={2} txt="Challenge" subtxt="Great women of Mahama" offset={1.58} />
+    <Key num={3} txt="Challenge" subtxt="Striving for impact" offset={2.2} />
     <Key
       num={4}
       txt="Challenge"
       subtxt="Treasure hunt takeaways"
-      offset={3.4}
+      offset={2.85}
     />
+    <!-- <Key
+      num={5}
+      txt="Challenge"
+      subtxt="How did we solve it?"
+      offset={3.5}
+    /> -->
   </div>
 </div>
 
@@ -76,9 +91,9 @@
     z-index: -1;
     right: 27%;
     top: 1%;
-    height: 510%;
+    height: 610%;
     width: calc(6px * 0.67);
-    background: linear-gradient(to bottom, transparent 12%, #b2dfdb 0%);
+    background: linear-gradient(to bottom, transparent 12%, #b2dfdb 0% 92%, transparent 12%);
   }
 
   .subtitle {
