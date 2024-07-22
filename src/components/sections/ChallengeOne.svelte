@@ -1,6 +1,5 @@
 <script>
   import PhoneView from "../PhoneView.svelte";
-  import KeyPoint from "../KeyPoint.svelte";
 
   $: currentClip = 0;
 
@@ -57,7 +56,6 @@
       {/each}
     </div>
   </div>
-  <!-- <KeyPoint num="1" txt="Challenge" /> -->
 </div>
 
 <style>

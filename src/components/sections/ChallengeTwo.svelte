@@ -1,5 +1,4 @@
 <script>
-  import KeyPoint from "../KeyPoint.svelte";
 </script>
 
 <div class="container">
@@ -39,7 +38,6 @@
     different empowerment activities is a beam of hope and inspiration to other
     women in other communities.
   </div>
-  <!-- <KeyPoint num="2" txt="Challenge" /> -->
 </div>
 
 <style>
@@ -81,15 +79,15 @@
       padding: calc(1rem * 0.67) 0;
     }
     .text {
-    font-size: calc(1.2rem * 0.67);
-    padding: calc(1rem * 0.67);
-    /* width: calc(calc(53rem * 0.67) * 1.2); */
-    width: 100%;
-    /* height: calc(calc(30rem * 0.67) * 1.2); */
-    height: fit-content;
-    border-radius: calc(1rem * 0.67);
-    line-height: calc(2.2rem * 0.67);
-    letter-spacing: calc(0.03rem * 0.67);
-  }
+      font-size: calc(1.2rem * 0.67);
+      padding: calc(1rem * 0.67);
+      /* width: calc(calc(53rem * 0.67) * 1.2); */
+      width: 100%;
+      /* height: calc(calc(30rem * 0.67) * 1.2); */
+      height: fit-content;
+      border-radius: calc(1rem * 0.67);
+      line-height: calc(2.2rem * 0.67);
+      letter-spacing: calc(0.03rem * 0.67);
+    }
   }
 </style>

@@ -13,7 +13,6 @@
   <div class="content">
     <span>Calling attention to the helpless and giving to the needful ...</span>
   </div>
-  <!-- <KeyPoint num="3" txt="Challenge" /> -->
 </div>
 
 <style>

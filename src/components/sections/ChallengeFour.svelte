@@ -1,5 +1,4 @@
 <script>
-  import KeyPoint from "../KeyPoint.svelte";
 </script>
 
 <div class="container">
@@ -21,7 +20,6 @@
       practices of young women.
     </div>
   </div>
-  <!-- <KeyPoint num="4" txt="Challenge" /> -->
 </div>
 
 <style>
@@ -52,15 +50,15 @@
     font-family: Inter;
   }
 
-@media (max-width: 400px) {
-  .takeaways {
-    display: flex;
-    flex-direction: column;
+  @media (max-width: 400px) {
+    .takeaways {
+      display: flex;
+      flex-direction: column;
+    }
+    .card {
+      border-radius: calc(1rem * 0.67);
+      padding: calc(2rem * 0.67);
+      font-size: calc(2rem * 0.67);
+    }
   }
-  .card {
-    border-radius: calc(1rem * 0.67);
-    padding: calc(2rem * 0.67);
-    font-size: calc(2rem * 0.67);
-  }
-}
 </style>

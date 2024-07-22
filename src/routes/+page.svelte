@@ -8,7 +8,7 @@
   import ChallengeFour from "../components/sections/ChallengeFour.svelte";
   import ChallengeFive from "../components/sections/ChallengeFive.svelte";
   import ChallengeSix from "../components/sections/ChallengeSix.svelte";
-  import Key from "../components/Key.svelte";
+  import KeyPoint from "../components/KeyPoint.svelte";
 </script>
 
 <div class="container">
@@ -40,21 +40,31 @@
     <ChallengeSix />
   </section>
   <div class="keymap">
-    <Key
+    <KeyPoint
       num={1}
       txt="Challenge"
       subtxt="Passions alone and together"
       offset={0.85}
     />
-    <Key num={2} txt="Challenge" subtxt="Great women of Mahama" offset={1.58} />
-    <Key num={3} txt="Challenge" subtxt="Striving for impact" offset={2.2} />
-    <Key
+    <KeyPoint
+      num={2}
+      txt="Challenge"
+      subtxt="Great women of Mahama"
+      offset={1.58}
+    />
+    <KeyPoint
+      num={3}
+      txt="Challenge"
+      subtxt="Striving for impact"
+      offset={2.2}
+    />
+    <KeyPoint
       num={4}
       txt="Challenge"
       subtxt="Treasure hunt takeaways"
       offset={2.85}
     />
-    <!-- <Key
+    <!-- <KeyPoint
       num={5}
       txt="Challenge"
       subtxt="How did we solve it?"
@@ -93,7 +103,12 @@
     top: 1%;
     height: 610%;
     width: calc(6px * 0.67);
-    background: linear-gradient(to bottom, transparent 12%, #b2dfdb 0% 92%, transparent 12%);
+    background: linear-gradient(
+      to bottom,
+      transparent 12%,
+      #b2dfdb 0% 92%,
+      transparent 12%
+    );
   }
 
   .subtitle {

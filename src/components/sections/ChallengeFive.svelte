@@ -91,7 +91,7 @@
   }
 
   .highlight {
-    color: #fff;
+    color: #409B51;
     font: inherit;
     line-height: inherit;
     letter-spacing: inherit;
